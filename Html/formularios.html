@@ -1,0 +1,257 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Formularios en HTML</title>
+<link href="../CSS/style.page.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+		form{
+    		width: 50%;
+			height: auto;
+			padding: 30px;
+			background-color: #855e6e;
+			color: #ffdbd7;
+			margin: 0 auto;
+		}
+		label{
+    		
+			padding-top: 10px;
+		}
+		label, input{
+    		display:
+			margin-left: 10px;
+            margin-bottom: 20px;
+		}
+		input[type=text], input[type=password],input[type=number], input[type=select],input[type=email],input[type=date],input[type=file]{
+    		width: 100%;
+			padding: 8px;
+			font-weight: bold;
+			border-radius: 10px;
+			background-color: #ffb2c1;
+			
+		}
+        input[type=color]{
+    		border-radius: 5px;
+			background-color: #ffb2c1;
+			
+		}
+        
+		input[type=submit],input[type=reset]{
+			width: 20%;
+			background-color: #ffb2c1;
+			padding: 10px;
+			margin: 0 auto;
+			margin-top: 20px;
+			border-radius: 10px;
+			font-weight: bolder;
+		}
+		input{
+			color: #855e6e;
+			font-weight: bold;
+		}
+		input[type=text]:focus, input[type=password]:focus, input[type=number]:focus, input[type=email]:focus,input[type=date]:focus,input[type=color]:focus,input[type=file]:focus,select{
+			background-color:#ce7095;
+			border: 3px solid #ffb2c1;
+			
+		}
+		select{
+			width: 100%;
+			padding: 8px;
+			font-weight: bold;
+			border-radius: 10px;
+			background-color: #ffb2c1;
+		}
+        td{
+            padding: 10px;
+        }
+        P{
+            margin-bottom: 20px;
+        }
+        
+	</style>
+</head>
+
+	<body>
+	<header>
+	  <h1>Formularios</h1>
+    </header>
+	<nav>
+		<ul>
+			<li><a href="../index.html">Inicio</a></li>
+            <li><a href="Listas.html">Listas</a></li>
+            <li><a href="Enlaces.html">Enlaces</a></li>
+            <li><a href="tablas.html">Tablas</a></li>
+            <li><a href="im%C3%A1genes.html">Imágenes</a></li>
+            <li><a href="Audio.html">Audio</a></li>
+            <li><a href="Video.html">Video</a></li>
+            <li><a href="formularios.html">Formulario</a></li>
+		</ul>
+	</nav>
+	<main>
+	  <section>
+	    <h2>Formulario Usuario 1</h2>
+	    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus numquam, quasi fugiat debitis a dolorum expedita sint accusantium sequi ducimus perferendis, dolore sed iure atque incidunt delectus? Officiis, veniam, aperiam commodi accusantium adipisci asperiores neque similique culpa cumque a corporis soluta deleniti, aspernatur vel ipsum! Ipsam eum neque, ad in. Voluptate suscipit veniam architecto voluptatem molestiae facilis dolores unde excepturi, saepe sit harum nam asperiores accusantium magnam explicabo, non similique quibusdam, beatae officiis! Quos aspernatur saepe error fugiat vitae eius perferendis incidunt voluptatum, a culpa assumenda neque delectus necessitatibus, blanditiis sed rem, fuga modi dolorum dignissimos, expedita. Explicabo, nobis, numquam!</p>
+		  <form action="" method="get">
+		  	<label id="">Nombre:</label>
+			<input type="text" id="nombre" name="nombre">
+			<label id="">Contraseña:</label>
+			<input type="password" id="contrasena" name="contrasena">
+			<input type="submit" value="ENVIAR">
+			
+		  </form>
+	  </section>
+	  <section>
+	    <h2>Formulario Usuario 2</h2>
+	    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam velit dignissimos est, hic alias consectetur omnis quidem consequatur, at ipsa, quae adipisci blanditiis quod ducimus eligendi minima commodi aspernatur eos porro non animi modi. Repellendus molestias alias quisquam velit delectus sint minima fugiat, debitis voluptatibus enim rerum doloribus eaque vel unde! Maiores fuga, reiciendis quod repellat eum ipsa molestias est voluptatum, natus laboriosam. Voluptatem ea impedit eligendi nihil nisi quos voluptate. Numquam corrupti animi assumenda minima nisi, magni inventore, quo vel veritatis molestias est in! Omnis, quae nihil sit reprehenderit cupiditate eos eveniet officiis dolores! Nostrum repudiandae accusamus ea eum.</p>
+	    	<form id="form1" name="form1" method="get">
+              <label for="Nombre">Nombre:</label>
+              <input type="text" name="textfield" id="textfield">
+              <label for="Edad">Edad:</label>
+              <input type="number" name="Edad" id="Edad" min="18" max="100">
+              <label for="select">Estado:</label>
+              <select name="Estado" id="Estado">
+				  <option value="Aguascalientes">Aguascalientes</option>
+				  <option value="Colima">Colima</option>
+				  <option value="Durango">Durango</option>
+				  <option value="Jalisco">Jalisco</option>
+				  <option value="Nayarit">Nayarit</option>
+				  <option value="Puebla">Puebla</option>
+			  </select>
+			  <input type="submit" value="ENVIAR">
+    	</form>
+      </section>
+	  <section>
+	    <h2>Formulario Usuario 3</h2>
+	    	<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, dignissimos quos. Voluptate beatae amet sequi quae reprehenderit saepe veritatis, qui praesentium nam! Reprehenderit aliquam autem, quas doloremque quidem laboriosam voluptate, vero incidunt veniam pariatur et optio ab impedit cumque libero fugiat eligendi suscipit? Non deserunt temporibus odit accusantium ab eius possimus delectus sequi voluptate eum a quo nulla saepe totam alias vero nesciunt iure modi tempore cumque, fugit pariatur. Cum, error non eaque nisi asperiores ipsum quisquam sint aperiam at mollitia cupiditate, autem! Reprehenderit placeat quas beatae incidunt, similique, rem ex qui rerum optio alias eveniet veritatis dolore sapiente tenetur.</p>
+	    	<form id="form2" name="form2" method="post">
+	    	  <label for="Nombre">Nombre:</label>
+              <input type="text" name="textfield2" id="textfield2">
+              <label for="Genero">Genero:</label>
+			  <table  style="width=80%;">
+                <tr>
+                    <td><input type="radio" name="Genero" value="Fem" id="Genero_0">
+                    </td>
+                    <td><label>Femenino</label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="Genero" value="Mas" id="Genero_1"></td>
+                    <td><label> Masculino</label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="Genero" value="otro" id="Genero_2"></td>
+                    <td><label> Otro</label></td>
+                </tr>
+              </table>
+			<label for="Musica">¿Cuál es tu género musical favorito?</label>
+                
+			<p>
+                <br>
+			  <input style="margin-left:10px;" type="checkbox" name="Musica" value="clasica" id="Musica_0">
+              <label>Clásica</label>
+			  <br>
+			  <input style="margin-left:10px;" type="checkbox" name="Musica" value="pop" id="Musica_1">
+              <label>Pop</label>
+			  <br>
+			  <input style="margin-left:10px;" type="checkbox" name="Musica" value="rock" id="Musica_2">
+              <label>Rock</label>
+			  <br>
+			  <input style="margin-left:10px;" type="checkbox" name="Musica" value="tropical" id="Musica_3">
+              <label>Tropical</label>
+			  <br>
+			  <input style="margin-left:10px;" type="checkbox" name="Musica" value="jazz" id="Musica_4">
+              <label>Jazz </label>
+			  <br>
+			  </p>
+			<input type="submit" value="ENVIAR">
+   	    </form>
+      </section>
+	  <section>
+	    <h2>Formulario Usuario 4</h2>
+	    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid sint dolor earum consequatur asperiores itaque quam, debitis expedita vitae natus officia et cum possimus iure quidem! Impedit aut repellat sit. Est enim, neque odio beatae cupiditate, praesentium reprehenderit culpa dolorem consequuntur quas facilis nihil voluptates ducimus nam natus quisquam quia saepe optio eius eum ea unde eos pariatur. Culpa ratione, ducimus id. Eligendi numquam libero voluptatum maxime tenetur, totam quo, dicta ipsa est quae dolore asperiores repellendus cumque itaque voluptas, porro quam sapiente molestias commodi laudantium autem. Sit numquam cupiditate ducimus sapiente aliquid at natus veritatis ut, nihil, aspernatur, quam.</p>
+           <form action="" method="get">
+		  	<label for="Nombre2">Nombre(s):</label><br>
+            <input type="text" id="fname" name="fname" value="Ana"><br>
+            <label for="Apellidos">Apellidos:</label><br>
+            <input type="text" id="lname" name="lname" value="García"><br>
+            <label for="fnacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="birthday" name="birthday"><br>
+            <label for="identi">Indetificación oficial:</label>
+            <input type="file" id="myfile" name="myfile"><br><br>
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="email" name="email">
+            <label for="favcolor">Color favorito:</label>
+            <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br>
+             <label for="Comida">Comida favorita:</label>
+			  <table  style="width=80%;">
+                <tr>
+                    <td><input type="radio" name="Mariscos" value="Mar" id="Comida_0">
+                    </td>
+                    <td><label>Mariscos</label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="Italiana" value="ita" id="Comida_1"></td>
+                    <td><label> Italiana</label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="Mexicana" value="mex" id="Comida_2"></td>
+                    <td><label> Mexicana</label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="China" value="chi" id="Comida_3"></td>
+                    <td><label> China</label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="Japonesa" value="jap" id="Comida_4"></td>
+                    <td><label> Japonesa</label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="Otro" value="otro" id="Comida_5"></td>
+                    <td><label>Otro</label></td>
+                </tr>
+                
+              </table>
+             
+               	<label for="deportes">Selecciona los deportes que hayas practicado:</label>
+                
+			<p>
+                <br>
+			  <input style="margin-left:10px;" type="checkbox" name="deportes" value="volley" id="deportes_0">
+              <label>Volleyball</label>
+			  <br>
+			  <input style="margin-left:10px;" type="checkbox" name="deportes" value="basket" id="deportes_1">
+              <label>Basketball</label>
+			  <br>
+			  <input style="margin-left:10px;" type="checkbox" name="deportes" value="foot" id="deportes_2">
+              <label>Football</label>
+			  <br>
+			  <input style="margin-left:10px;" type="checkbox" name="deportes" value="atle" id="deportes_3">
+              <label>Atletismo</label>
+			  <br>
+			  <input style="margin-left:10px;" type="checkbox" name="deportes" value="base" id="deportes_5">
+              <label>Baseball</label>
+			  <br>
+              <input style="margin-left:10px;" type="checkbox" name="deportes" value="natacion" id="deportes_6">
+              <label>Natación</label>
+			  <br>
+              <input style="margin-left:10px;" type="checkbox" name="deportes" value="otro" id="deportes_7">
+              <label>Otro</label>
+			  <br>
+			  </p>
+            
+              <label for="Paises">¿Cuántos países has visitado?:</label>
+              <input type="number" name="paises" id="paises" min="1" max="50">
+              <label for="select">¿Qué tipo de actividades prefieres?</label>
+              <select name="actividades" id="actividades">
+				  <option value="Interiores">Interiores</option>
+				  <option value="Alairelibre">Al aire libre</option>  
+			  </select>
+			<input type="submit" value="ENVIAR"><input type="reset" value="RESET">
+			
+		  </form>
+      </section>
+	</main>
+	<footer>
+	  <h5>Elaborado por María Fernanda González Rodríguez</h5>
+	</footer>
+	</body>
+</html>

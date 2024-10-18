@@ -1,0 +1,219 @@
+<html>
+    <head>
+        <title>Listas</title>
+    </head>
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Sora:wght@100..800&family=Yeseva+One&display=swap');
+        
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        h1{
+    font-family: "Yeseva One", serif;
+        }
+        h2{
+            padding: 10px;
+            font-family:  "Lexend Deca", sans-serif;
+        }
+        ol,ul{
+            padding: 20px;
+        }
+        header,nav,main,footer{
+            width:100%;
+            padding: 40px;
+            margin-left: auto;
+            margin-right: auto;;
+            font-family: "Sora", sans-serif;
+        }
+        header{
+            background-color: #536493;
+            color: #fff1db;
+            text-align: center;
+        }
+        nav{
+            background-color:#ef5a6f; 
+            color: #fff1db;
+            height: 80px;
+            
+            
+        }
+        main{
+            background-color:#fff1db;
+            color:#536493;  
+        }
+        footer{
+            background-color: #536493;
+            color: #fff1db;
+            text-align: center;
+        }
+        section{
+            width: 80%;
+            background-color: #d4bdac;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            margin-top: 20px;
+       
+        }
+        dt,dd{
+            margin-bottom: 15px;
+        }
+        nav ul{
+            list-style-type: none;
+            text-align: center;      
+        }
+        nav ul li{
+            background-color:#fff1db;
+            color: #536493;
+            margin-bottom: 10px;
+            padding: 10px;
+            width: 8%;
+            text-align: center;
+            border-width: 3px;
+            border-color:#536493;
+            border-style: solid;
+            display: inline-block;
+        }
+        a {
+            text-decoration: none;
+        }
+        nav ul li:hover {
+            background-color: #536493;
+        }
+        nav ul li a:hover {
+            color:  #fff1db;
+            font-weight: bold;
+            font-size: 17px;
+            
+        }
+         nav ul li a {
+            text-decoration: none;
+            color: #536493;
+        }
+        main nav { 
+            background-color: transparent;
+            
+                
+        }
+    </style>
+    <body>
+        <header>
+            <h1>Listas en html</h1>
+        </header>
+        <nav>
+             <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="Listas.html">Listas</a></li>
+                <li><a href="Enlaces.html">Enlaces</a></li>
+                 <li><a href="tablas.html">Tablas</a></li>
+                 <li><a href="im%C3%A1genes.html">Imágenes</a></li>
+                 <li><a href="Audio.html">Audio</a></li>
+                 <li><a href="Video.html">Video</a></li>
+                 <li><a href="formularios.html">Formulario</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <h2 id="Lista_ordenada">Cosas a las que me gustaría dedicarme</h2>
+                <ol type="a">
+                    <li>Agencia propia de diseño</li>
+                    <li>Negocio de Arts and Crafts</li>
+                    <li>Fotografía y video profesional</li>
+                    <li>Diseño UI UX</li>
+                    <li>Diseño Publicitario</li>
+                </ol>
+            </section>
+            <section>
+                <h2 id="Lista_desordenada">Lugares donde me gustaría vivir</h2>
+                <ul>
+                    <li>Auckland, Nueva Zelanda</li>
+                    <li>Toscana, Italia</li>
+                    <li>Jalisco, México</li>
+                    <li>Madrid, España</li>
+                    <li>Florencia, Italia</li>
+                </ul>
+            </section>
+            <section>
+                <h2 id="Lista_mixta">Países que quiero conocer</h2>
+                <ol type="i">
+                    <li>Italia
+                        <ul>
+                            <li>Roma</li>
+                            <li>Venecia</li>
+                            <li>Florencia</li>
+                            <li>Siena</li>
+                            <li>Toscana</li>
+                        </ul>
+                    </li>
+                    <li>España
+                        <ul>
+                            <li>San Sebastián</li>
+                            <li>Valencia</li>
+                            <li>Madrid</li>
+                            <li>Granada</li>
+                            <li>Burgos</li>
+                        </ul>
+                    </li>
+                    <li>Escocia
+                        <ul>
+                            <li>Edimburgo</li>
+                            <li>Inverness</li>
+                            <li>Aberdeen</li>
+                            <li>Perth</li>
+                            <li>Saint Andrews</li>
+                        </ul>
+                    </li>
+                    <li>Nueva Zelanda
+                        <ul>
+                            <li>Auckland
+                                <ul>
+                                    <li>Sky Tower</li>
+                                    <li>Mount Eden</li>
+                                    <li>Rangitoto</li>
+                                    <li>Waitomo Glowworm Caves</li>
+                                    <li>Queen Street</li>
+                                </ul>
+                            </li>
+                            <li>Welington</li>
+                            <li>Christchurch</li>
+                            <li>Dunedin</li>
+                            <li>Hamilton</li>
+                        </ul>
+                    </li>
+                    <li>Japón
+                        <ul>
+                            <li>Tokio</li>
+                            <li>Kioto</li>
+                            <li>Osaka</li>
+                            <li>Yokohama</li>
+                            <li>Fukuoka</li>
+                        </ul>
+                    </li>
+                </ol>
+            </section>
+            <section>
+                <h2 id="Lista_conceptos">Mis actividades preferidas</h2>
+                <dl>
+                    <dt>Conciertos</dt>
+                    <dd>Me encantan los conciertos porque son una experiencia única que combina la energía de la música en vivo con la emoción de compartir esos momentos con otras personas. La sensación de estar rodeada de gente que disfruta de la misma música es indescriptible, y cada concierto es una oportunidad de sentir la música de una manera más intensa. Para mí, es el espacio donde puedo desconectarme de todo y dejarme llevar por las canciones, la voz en vivo del artista, y la atmósfera que se crea. Es una de mis formas favoritas de disfrutar la música y vivirla al máximo.</dd>
+                    <dt>Viajar</dt>
+                    <dd>Viajar es una de mis grandes pasiones porque me permite descubrir nuevos lugares, culturas y formas de ver la vida. Cada destino trae consigo experiencias únicas, desde los paisajes y la arquitectura hasta las personas que conoces en el camino. Me encanta explorar ciudades, probar nuevas comidas, y aprender de cada rincón del mundo que visito. Viajar me llena de energía, me abre la mente y me da una sensación de libertad, como si por un momento todo fuera posible. Para mí, cada viaje es una aventura que me enriquece y me deja recuerdos inolvidables.</dd>
+                    <dt>Tiempo de calidad</dt>
+                    <dd>Pasar tiempo de calidad con las personas que quiero es de lo más importante para mí. Ya sea con mi familia, amigos o mi pareja, esos momentos son los que verdaderamente valoro y me llenan de felicidad. Disfruto de las conversaciones profundas, las risas espontáneas y simplemente compartir el presente con ellos. Estos instantes me ayudan a desconectarme del ritmo acelerado de la vida y a recordar lo que realmente importa: el amor, el apoyo y las conexiones que tengo con quienes me rodean. Esos momentos me nutren emocionalmente y fortalecen mis relaciones.</dd>
+                </dl>
+            </section>
+            <nav>
+                <ul>
+                    <li><a href="#Lista_ordenada">Lista Ordenada</a></li>
+                    <li><a href="#Lista_desordenada">Lista Desordenada</a></li>
+                    <li><a href="#Lista_mixta">Lista Mixta</a></li>
+                    <li><a href="#Lista_conceptos">Lista de conceptos</a></li>
+                </ul>
+            </nav>
+        </main>
+        <footer>
+            <h6>Elaborado por Maria Fernanda Gonzalez Rodriguez</h6>
+        </footer>
+    </body>
+</html>

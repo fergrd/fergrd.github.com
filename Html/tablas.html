@@ -1,0 +1,404 @@
+<html>
+    <head>
+        <title>Tablas en html</title>
+        <link rel="stylesheet" href="../CSS/style.page.css" type="text/css">
+        <style type="text/css">
+            #tabla1{
+                width: 100%;
+                text-align: center;
+                margin: 0 auto;
+                color:#855e6e;
+                border-style: solid;
+                border-color: #ce7095;
+                border-width: 5px;
+                border-spacing: 10px;
+            }
+            #tabla1 th{
+                background-color: #ffb2c1;
+            }
+            #tabla1 td{
+                background-color: #f7f1e1;
+                text-align: left;
+                border-radius: 5px;
+                border-style: solid;
+                border-color: #ce7095;
+                border-width: 3px;
+                margin: 10px;
+            }
+            #tabla2{
+                color:#ce7095;
+                margin: 0 auto;
+                border-style: solid;
+                border-color: #ce7095;
+                border-width: 5px;
+                border-spacing: 10px;
+            }
+            #tabla2 td{
+                height: 20px;
+                padding: 10px;
+                color: #855e6e;
+                background-color: #f7f1e1;
+            } 
+            #tabla2 th{
+                background-color: #ffb2c1;
+            }
+            .celda_centrada{
+                text-align: center;
+                padding: 0px;
+                color: #ce7095;
+                font-weight: bold;
+            }
+            .tabla_dos{
+                width: 600px;
+                border-collapse: collapse;
+                border-style: solid
+            }
+            .tabla_dos td, .tabla_dos th{
+                width: 100px;
+                border-style: dashed;
+                    
+            }
+            #tabla_zebra{
+                width: 100%;
+                background-color: #f7f1e1;
+                text-align: left;
+                border-style: solid;
+                border-color: #ce7095;
+                border-width: 3px;
+                margin: 10px;
+                border-collapse: collapse;
+                                
+            }
+            #tabla_zebra tbody tr:nth-child(even){
+                width: 100%;
+                background-color:#f7f1e1; 
+                color:#855e6e; 
+                height: 30px;
+            }
+            #tabla_zebra tbody tr:nth-child(odd){
+                width: 100%;
+                background-color:#ffb2c1; 
+                color: #855e6e;
+                height: 30px;
+            }
+            #tabla_zebra thead tr{
+                background-color:#855e6e; 
+                color: #f7f1e1;
+                text-align: center;
+            }
+             #tabla_zebra td{
+                padding: 10px;
+                border-width: 3px;
+                border-style: solid;
+            }
+            .tabla_hover{
+                width: 80%;
+                background-color: #f7f1e1;
+                text-align: left;
+                border-style: solid;
+                border-color: #f7f1e1;
+                border-width: 3px;
+                margin: 10px;
+                border-collapse: collapse;
+            }
+             .tabla_hover tr:hover{
+                background-color:#ce7095;
+                color:#f7f1e1;
+                font-weight: bold;
+            }
+            .tabla_hover td{
+                padding: 10px;
+                border-width: 3px;
+                border-style: solid;
+             }   
+            .tabla_hover tbody tr{
+                width: 100%;
+                background-color:#ffb2c1; 
+                color: #855e6e;
+                height: 30px;
+             }   
+            .tabla_hover thead tr{
+                background-color:#855e6e; 
+                color: #f7f1e1;
+                height: 30px;
+                text-align: center;
+             }  
+            #tabla4{
+                margin: 0 auto;
+             }  
+            
+        
+        
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Tablas en html</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="Listas.html">Listas</a></li>
+                <li><a href="Enlaces.html">Enlaces</a></li>
+                <li><a href="tablas.html">Tablas</a></li>
+                <li><a href="im%C3%A1genes.html">Imágenes</a></li>
+                <li><a href="Audio.html">Audio</a></li>
+                <li><a href="Video.html">Video</a></li>
+                <li><a href="formularios.html">Formulario</a></li>
+            </ul> 
+        </nav>
+        <main>
+            <section style="overflow-x:auto">
+                <h2>Tablas</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac mauris quis est lobortis tempor. Aliquam erat volutpat. Mauris ac diam eros. Vivamus fringilla, elit nec bibendum rhoncus, dolor elit ultrices odio, sed euismod lectus sem et magna. Suspendisse neque purus, vehicula a luctus non, vestibulum vel nisl. Sed vel sem sed sapien luctus auctor a ut leo. Fusce posuere, ex eget dignissim tempor, felis erat rhoncus ante, at viverra turpis tortor in nunc.</p>
+                <table id="tabla1" border="1">
+                    <thead>
+                        <tr>
+                            <th>Matrícula</th>
+                            <th>Nombre</th>
+                            <th>Apellido Paterno</th>
+                            <th>Apellido Materno</th>
+                            <th>Colegio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>202083352</td>
+                            <td>Fernanda</td>
+                            <td>González</td>
+                            <td>Rodríguez</td>
+                            <td>Arquitectura</td>
+                        </tr>
+                        <tr>
+                            <td>202075892</td>
+                            <td>Daniela</td>
+                            <td>Macías</td>
+                            <td>Parra</td>
+                            <td>Urbano</td>  
+                        </tr>
+                        <tr>
+                            <td>202045563</td>
+                            <td>Ali</td>
+                            <td>Pezzat</td>
+                            <td>Victoria</td>
+                            <td>Diseño</td>  
+                        </tr>
+                        <tr>
+                            <td>202084563</td>
+                            <td>Sofía</td>
+                            <td>Guillen</td>
+                            <td>Blanco</td>
+                            <td>Diseño</td>  
+                        </tr>
+                        <tr>
+                            <td>202065743</td>
+                            <td>Carla</td>
+                            <td>Verde</td>
+                            <td>Pozos</td>
+                            <td>Urbano</td>  
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                    </tfoot>
+                </table>
+            </section>
+            <section style="overflow-x:auto">
+                <h2>Tablas</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac mauris quis est lobortis tempor. Aliquam erat volutpat. Mauris ac diam eros. Vivamus fringilla, elit nec bibendum rhoncus, dolor elit ultrices odio, sed euismod lectus sem et magna. Suspendisse neque purus, vehicula a luctus non, vestibulum vel nisl. Sed vel sem sed sapien luctus auctor a ut leo. Fusce posuere, ex eget dignissim tempor, felis erat rhoncus ante, at viverra turpis tortor in nunc.</p>
+                <table id="tabla2" class="tabla_dos">
+                    <thead>
+                        <tr>
+                            <th style="width:200px">Nombre</th> 
+                            <th style="width:100px">Edad</th>
+                            <th style="width:200px" colspan="2">Teléfono</th>
+                            <th style="width:100px">Cooperación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Erika Rodríguez Bonilla</td>
+                            <td style="text-align:center;">15</td>
+                            <td>2222774768</td>
+                            <td>2212154413</td>
+                            <td style=" text-align: center;
+                            padding: 0px;
+                            color: #ce7095;
+                            font-weight: bold;">100</td>
+                        </tr>
+                        <tr>
+                            <td>Regina Gutiérrez Castañeda</td>
+                            <td style="text-align:center;">14</td>
+                            <td>2212154413</td>
+                            <td>2212154413</td>
+                            <td style=" text-align: center;
+                            padding: 0px;
+                            color: #ce7095;
+                            font-weight: bold;">70</td>
+                        </tr>
+                        <tr>
+                            <td>Alfredo Valle Cano</td>
+                            <td style="text-align:center;">15</td>
+                            <td>2223548209</td>
+                            <td>2212154413</td>
+                            <td style=" text-align: center;
+                            padding: 0px;
+                            color: #ce7095;
+                            font-weight: bold;">150</td>
+                        </tr>
+                        <tr>
+                            <td>Camila Estrada López</td>
+                            <td style="text-align:center;">13</td>
+                            <td>2228202221</td>
+                            <td>2212154413</td>
+                            <td style=" text-align: center;
+                            padding: 0px;
+                            color: #ce7095;
+                            font-weight: bold;">50</td>
+                        </tr>
+                        <tr>
+                            <td>Eugenia Delgado Martínez</td>
+                            <td style="text-align:center;">14</td>
+                            <td>2213564323</td>
+                            <td>2212154413</td>
+                            <td style="text-align: center;
+                            padding: 0px;
+                            color: #ce7095;
+                            font-weight: bold;">100</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Total</td>
+                            <td class="celda_centrada" style="background-color:#855e6e; color:#f7f1e1">480</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            <section style="overflow-x:auto">
+                <h2>Tablas</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac mauris quis est lobortis tempor. Aliquam erat volutpat. Mauris ac diam eros. Vivamus fringilla, elit nec bibendum rhoncus, dolor elit ultrices odio, sed euismod lectus sem et magna. Suspendisse neque purus, vehicula a luctus non, vestibulum vel nisl. Sed vel sem sed sapien luctus auctor a ut leo. Fusce posuere, ex eget dignissim tempor, felis erat rhoncus ante, at viverra turpis tortor in nunc.</p>
+                <table border="2" id="tabla_zebra">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Edad</th>
+                            <th>Deporte</th>
+                            <th>Teléfono</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Emilia Díaz Suárez</td>
+                            <td style="text-align:center;">20</td>
+                            <td>Basketball</td>
+                            <td style="text-align:center;">2211458796</td>
+                            <td>emilia.lopez@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Daniela Macías Parra</td>
+                            <td style="text-align:center;">19</td>
+                            <td>Tenis</td>
+                            <td style="text-align:center;">2256984103</td>
+                            <td>daniela.macias@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Ali Pezzat Victoria</td>
+                            <td style="text-align:center;">18</td>
+                            <td>Volleyball</td>
+                            <td style="text-align:center;">2215441213</td>
+                            <td>ali.pezzat@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Adriana Verde Lima</td>
+                            <td style="text-align:center;">21</td>
+                            <td>Natación</td>
+                            <td style="text-align:center;">2212154413</td>
+                            <td>adri.lima@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Carolina Saucedo Estrada</td>
+                            <td style="text-align:center;">20</td>
+                            <td>Karate</td>
+                            <td style="text-align:center;">2222774768</td>
+                            <td>carolina.sauce@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Mónica Lobo Juárez</td>
+                            <td style="text-align:center;">19</td>
+                            <td>Football</td>
+                            <td style="text-align:center;">2222775896</td>
+                            <td>monic.lobo@gmail.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section style="overflow-x:auto">
+                <h2>Tabla</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac mauris quis est lobortis tempor. Aliquam erat volutpat. Mauris ac diam eros. Vivamus fringilla, elit nec bibendum rhoncus, dolor elit ultrices odio, sed euismod lectus sem et magna. Suspendisse neque purus, vehicula a luctus non, vestibulum vel nisl. Sed vel sem sed sapien luctus auctor a ut leo. Fusce posuere, ex eget dignissim tempor, felis erat rhoncus ante, at viverra turpis tortor in nunc.</p>
+                 <table border="2" class="tabla_hover" id="tabla4">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Edad</th>
+                            <th>Deporte</th>
+                            <th>Teléfono</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Emilia Díaz Suárez</td>
+                            <td style="text-align:center;">20</td>
+                            <td>Basketball</td>
+                            <td style="text-align:center;">2211458796</td>
+                            <td>emilia.lopez@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Daniela Macías Parra</td>
+                            <td style="text-align:center;">19</td>
+                            <td>Tenis</td>
+                            <td style="text-align:center;">2256984103</td>
+                            <td>daniela.macias@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Ali Pezzat Victoria</td>
+                            <td style="text-align:center;">18</td>
+                            <td>Volleyball</td>
+                            <td style="text-align:center;">2215441213</td>
+                            <td>ali.pezzat@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Adriana Verde Lima</td>
+                            <td style="text-align:center;">21</td>
+                            <td>Natación</td>
+                            <td style="text-align:center;">2212154413</td>
+                            <td>adri.lima@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Carolina Saucedo Estrada</td>
+                            <td style="text-align:center;">20</td>
+                            <td>Karate</td>
+                            <td style="text-align:center;">2222774768</td>
+                            <td>carolina.sauce@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Mónica Lobo Juárez</td>
+                            <td style="text-align:center;">19</td>
+                            <td>Football</td>
+                            <td style="text-align:center;">2222775896</td>
+                            <td>monic.lobo@gmail.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </section>
+        </main>
+        <footer>
+            <h5>Elaborado por María Fernanda González Rodríguez</h5>
+        </footer>
+    </body>
+</html>
